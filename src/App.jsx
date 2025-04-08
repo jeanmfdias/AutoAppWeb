@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import {Header} from "./components/base/Header.jsx";
+import {Outlet, RouterProvider} from "react-router-dom";
+import {routes} from "./routes.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Auto App Web</h1>
+      <RouterProvider router={routes} />
     </>
   )
 }
