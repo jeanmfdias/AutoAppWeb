@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import NavItem from "./NavItem.jsx";
 
-const Links = [
+const links = [
   {
     url: "/cars",
     label: "Cars",
@@ -18,7 +18,7 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            { Links.map((item, index) => <NavItem key={index} item={item} />) }
+            { links.map((item, index) => <NavItem key={index} item={item} />) }
           </ul>
         </div>
       </div>
