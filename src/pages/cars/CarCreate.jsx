@@ -1,3 +1,7 @@
 export default function CarCreate() {
-  return (<></>);
+  return (
+    <>
+     <h1>Add New Car</h1>
+    </>
+  );
 }

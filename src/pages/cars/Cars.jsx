@@ -16,7 +16,7 @@ export default function Cars() {
     <>
       <div className="flex-row">
         <h1 className="align-baseline float-start">Cars</h1>
-        <Link to={"/cars/create"} className="btn btn-primary float-end mt-2">Adicionar</Link>
+        <Link to={"/cars/create"} className="btn btn-primary float-end mt-2">Add</Link>
       </div>
       <table className="table table-striped">
         <thead>
@@ -24,6 +24,7 @@ export default function Cars() {
             <th>Brand</th>
             <th>Model</th>
             <th>Year</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>

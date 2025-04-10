@@ -3,6 +3,8 @@ import Container from "./components/base/Container.jsx";
 import Home from "./pages/Home.jsx";
 import Cars from "./pages/cars/Cars.jsx";
 import CarCreate from "./pages/cars/CarCreate.jsx";
+import CarDetail from "./pages/cars/CarDetail.jsx";
+import CarEdit from "./pages/cars/CarEdit.jsx";
 
 export const routes = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ export const routes = createBrowserRouter([
       {
         path: "/cars/create",
         element: <CarCreate />
+      },
+      {
+        path: "/cars/:id",
+        element: <CarDetail />
+      },
+      {
+        path: "/cars/:id/edit",
+        element: <CarEdit />
       }
     ]
   }
