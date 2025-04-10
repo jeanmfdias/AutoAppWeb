@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 import {getAll} from "../../services/cars.service.jsx";
+import {Link} from "react-router-dom";
+import {CarItem} from "../../components/cars/CarItem.jsx";
 
 export default function Cars() {
   const [cars, setCars] = useState([]);
@@ -12,7 +14,10 @@ export default function Cars() {
 
   return (
     <>
-      <h1>Cars</h1>
+      <div className="flex-row">
+        <h1 className="align-baseline float-start">Cars</h1>
+        <Link to={"/cars/create"} className="btn btn-primary float-end mt-2">Adicionar</Link>
+      </div>
       <table className="table table-striped">
         <thead>
           <tr>
@@ -22,11 +27,7 @@ export default function Cars() {
           </tr>
         </thead>
         <tbody>
-        { cars.map(car => (<tr key={car.id}>
-          <td>{car.brand}</td>
-          <td>{car.model}</td>
-          <td>{car.factory_year}/{car.model_year}</td>
-        </tr>)) }
+        { cars.map(car => <CarItem key={car.id} car={car} />) }
         </tbody>
       </table>
     </>
