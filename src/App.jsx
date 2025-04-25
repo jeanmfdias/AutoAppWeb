@@ -1,6 +1,6 @@
-import {Header} from "./components/base/Header.jsx";
-import {Outlet, RouterProvider} from "react-router-dom";
+import {RouterProvider} from "react-router-dom";
 import {routes} from "./routes.jsx";
+import "./assets/scss/styles.scss";
 
 function App() {
   return (

@@ -7,3 +7,7 @@ export function getAll() {
 export function saveCar(vehicle) {
   return http.post("/vehicles", vehicle);
 }
+
+export function getCarById(id) {
+  return http.get(`/vehicles/${id}`);
+}

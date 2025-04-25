@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {http} from "../../config/http.jsx";
 import {saveCar} from "../../services/cars.service.jsx";
+import HeaderBack from "../../components/base/HeaderBack.jsx";
 
 export default function CarCreate() {
   const [brand, setBrand] = useState("");
@@ -32,7 +33,7 @@ export default function CarCreate() {
 
   return (
     <>
-      <h1>Add New Car</h1>
+      <HeaderBack title={"Add New Car"} />
 
       {success ? (<div className="alert alert-success" role="alert">Car saved successfully!</div>) : null}
 
