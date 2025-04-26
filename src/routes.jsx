@@ -5,6 +5,7 @@ import Cars from "./pages/cars/Cars.jsx";
 import CarCreate from "./pages/cars/CarCreate.jsx";
 import CarDetail from "./pages/cars/CarDetail.jsx";
 import CarEdit from "./pages/cars/CarEdit.jsx";
+import CarDelete from "./pages/cars/CarDelete.jsx";
 
 export const routes = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const routes = createBrowserRouter([
       {
         path: "/cars/:id/edit",
         element: <CarEdit />
+      },
+      {
+        path: "/cars/:id/delete",
+        element: <CarDelete />
       }
     ]
   }

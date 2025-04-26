@@ -11,3 +11,7 @@ export function saveCar(vehicle) {
 export function getCarById(id) {
   return http.get(`/vehicles/${id}`);
 }
+
+export function deleteCarById(id) {
+  return http.delete(`/vehicles/${id}`);
+}

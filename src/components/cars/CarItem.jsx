@@ -10,6 +10,7 @@ export function CarItem({ car }) {
         <div className="btn-group btn-group-sm">
           <Link to={`/cars/${car.id}`} className="btn btn-info">Details</Link>
           <Link to={`/cars/${car.id}/edit`} className="btn btn-warning">Edit</Link>
+          <Link to={`/cars/${car.id}/delete`} className="btn btn-danger">Delete</Link>
         </div>
       </td>
     </tr>
